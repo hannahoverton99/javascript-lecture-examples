@@ -6,7 +6,14 @@
 /* TODO: Add CSS for the body — change the font family */
 /* TODO: Change the width, padding, margin, and box-sizing */
 /* TODO: Change the background to use the blossom image, fixed */
-
+body{
+  color: green;
+  background: url(./images/blossoms.jpg) fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  padding: 0 10vw;
+  box-sizing: border-box;
+}
 
 /* TODO: Set the background of header and footer to dark green and text color to white */
 /* TODO: Set the padding to 30px for left and right and 10px for top and bottom */
@@ -14,7 +21,10 @@
 
 /* TODO: Set the background of main to white */
 /* TODO: Set the padding to 30px on all sides */
-
+main{
+  background-color: white;
+  padding: 30 px;
+}
 
 /* TODO: Change the font family to a cursive script for h1 and increase the font size */
 /* TODO: Adjust the top and bottom margins */

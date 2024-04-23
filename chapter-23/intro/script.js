@@ -1,8 +1,9 @@
 window.addEventListener('load', function() {  
 
   // TODO: Take a look at native global objects, window and document
-  
-  
+  console.log(window);
+  console.log("document log: ", document);
+  console.log(document);
   const intro = document.getElementById('intro');
 
   // Always available because it comes from browser's current version of the document
@@ -13,13 +14,16 @@ window.addEventListener('load', function() {
   console.log(intro.style.color);
   
   // TODO: Change the values of the text, color, and font size
-
+intro.innerHTML = 'Ready to go!';
+intro.style.color = "green";
+intro.style.fontSize ='48pt';
 
   // TODO: Make the text bold and italicized as well
-
+intro.style.fontWeight ='bold';
+intro.style.fontStyle = 'italic';
 
   // TODO: Log the intro element to see the inline styling added
-
+console.log("intro", intro)
 
   // TODO: Log all five properties to see their values
   

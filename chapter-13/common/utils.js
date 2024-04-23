@@ -24,3 +24,8 @@ function formatAsTitleCase(str) {
 }
 
 // TODO: Set an export object with key/value pairs to export all three functions. Use aliases for the second and third keys.
+module.exports ={
+	roundToDec: roundToDec,
+	getRandNumber: getRandomNumber,
+	getTitleCase: formatAsTitleCase,
+};

@@ -1,5 +1,7 @@
 // TODO: Import the Beverage class
 
+const Beverage = require("./Beverage");
+
 /** The Juice Class **/
 
 /*
@@ -13,5 +15,20 @@
 
   Do not overwrite recycled or recycle()
 */
-
+class Juice extends Beverage{
+	constructor(name, ounces, container, fruits, veggies = []){
+		super(name, ounces, container);
+		this.fruits= fruits;
+		this.veggies= veggies;
+	}
+	describe(){
+		super.describe();
+		console.log("It contains the following:");
+		let ingredients = (this.fruits).concat(this.veggies);
+		for(let i = 0; i < ingredients.length; i++){
+			console.log(`\t${ingredients[i]}`);
+		}
+	}
+}
 // TODO: Export the Juice class
+module.exports = Juice;

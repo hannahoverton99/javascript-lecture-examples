@@ -17,6 +17,8 @@ function printValueAndType(data) {
 }
 
 // TODO: Call the function for each variable above
+let vars =[boy, age, hasBabySister, favoritePizzaPlace, favoriteIceCream];
+vars.forEach(printValueAndType);
 
 
 /* Data Structures */
@@ -30,7 +32,9 @@ let neighborKid = {
 };
 
 // TODO: Call the function to print the value and type of the array and object
-
+printValueAndType(toyNames);
+printValueAndType(neighborKid);
+console.log(neighborKid);
 
 /* Null and Undefined */
 
@@ -43,11 +47,15 @@ let pizzaPlanet = {
 	drink: "soda",
 	doesDeliveries: true,
 	videoGames: null,
-  // TODO: add play method
+    play: playGame
 }
 
 // TODO: Print the videoGames property
+console.log(pizzaPlanet.videoGames);
 
 // TODO: Print a nonexistent property of pizzaPlanet, hours
-
+console.log(pizzaPlanet.hours);
 // TODO: Call the play method
+// console.log(pizzaPlanet.play()); instead of console.logging, call the function instead since there is no return value. if you try to console.log something
+//without a return value you will get undefined as the type
+pizzaPlanet.play();

@@ -28,7 +28,18 @@ let bucky = {
   The function should return true or false depending on whether all of its characters are alphabetical or not.
 */
 function isAlphaOnly(str) {
-
+let allowed = "abcdefghijklmnopqrstuvwxyz";
+for(let i=0; i < str.length; i++){
+if(!allowed.includes(str[i].toLowerCase())){
+	return false;
+}
+}
+return true;
 }
 
 // TODO: Export items to be tested
+module.exports ={
+	MS_PER_YEAR: this.MS_PER_YEAR,
+	bucky :  bucky,
+	isAlphaOnly: isAlphaOnly
+}

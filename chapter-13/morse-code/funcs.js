@@ -59,13 +59,30 @@ const morseMap = {
 /** FUNCTIONS **/
 
 // TODO: Write a function to convert a single character to Morse code.
-
+function translateChar(char){
+  return morseMap[char.tuUpperCase()];
+}
 
 // TODO: Write a function that uses translateChar() to translate a word
-
+function translateWord(word){
+  let translatedWord = "";
+  for (let i = 0; i<word.length; i++){
+    if (word[i].toUpperCase() in morseMap){
+    translatedWord += translateChar(word[i]) + " ";
+    }
+}
+return translatedWord;
+}
 
 // TODO: Write a function that uses translateWord() to translate a string of words
-
+function translateAll(phrase){
+  let phraseArray = phrase.split(" ");
+  let translatedPhrase = "";
+  for (let i=0; i < phraseArray.length; i++){
+    translatedPhrase += translateWord(phraseArray[i]) + " ";
+  }
+  return translatedPhrase;
+}
 
 
 /** EXPORT FUNCTIONS **/
@@ -75,3 +92,8 @@ const morseMap = {
 */
 
 // TODO: Export all three functions
+module.exports+ {
+  translateChar: translateChar,
+  translateWord: translateWord,
+  translateAll: translateAll,
+}

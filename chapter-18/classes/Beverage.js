@@ -9,5 +9,24 @@
 
 	Add a method called describe() that prints a sentence to the console with its name, container, and capacity. The sentence should differ slightly depending on whether it's been recycled or not.
 */
+class Beverage {
+  constructor(name, ounces, container){
+    this.name= name;
+    this.ounces= ounces;
+    this.container= container;
+    this.recycled= false;
+  }
+
+  recycle(){
+    this.recycled= true;
+    console.log(`\nThat was delicious! I rinsed and recycled the ${this.container} of ${this.name}.`);
+  }
+
+  describe(){
+    let status = this.recycled ? "had" : "have"; //ternary expression
+    console.log(`\nI ${status} a ${this.ounces}-oz. ${this.container} of ${this.name}.`)
+  }
+}
 
 // TODO: Export the Beverage class
+module.exports= Beverage;

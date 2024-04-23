@@ -33,12 +33,24 @@ let toys = [
 
 // TODO: Write a function describeToys() that takes an array and accesses each object one at a time, printing a sentence using the following template literal: 
 // `${name} is a toy ${desc} who says things like, "${quote1}" and "${quote2}"\n`
-
+function describeToys(arr){
+for(let i = 0; i< arr.length; i++){
+	// console.log(name) ref error
+	let name = arr[i].name;
+	let desc= arr[i].description;
+	let quote1= arr[i].catchphrases[0];
+	let quote2 = arr[i].catchphrases[1];
+	console.log(name);
+	console.log(`${name} is a toy ${desc} who says things like, "${quote1}" and "${quote2}"\n`)
+}
+}
 
 // TODO: Call the function and pass in the array toys
-
+// describeToys(toys);
 // TODO: Change the scope of desc to global by removing the keyword let, and print it below
-
+// console.log(desc);
 // TODO: Remove the keyword let from quote1 above, then declare it with let below. Try printing it. What happens?
-
+// console.log(quote1);
 // TODO: Remove the keyword let from quote2 above, then declare it with var below. Try printing it. What happens?
+// var quote2;
+// console.log(quote2);

@@ -43,3 +43,4 @@ ${formatBusinessHours()}
 }
 
 // TODO: Export the last function directly without setting an object with key/value pairs
+module.exports = printOrgInfo;

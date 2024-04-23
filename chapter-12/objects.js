@@ -201,3 +201,6 @@ console.log(pirates);
 for(let i=0; i < pirates.length; i++){
 	console.log(`${pirates[i].name} is a ${pirates[i].position}`);
 }
+function getRandomDeckSwabber(arr){
+	let randIdx = getRandomIdx(arr)
+}console.log(g)
